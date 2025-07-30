@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.env
+*.venv
+env/
+venv/
+ENV/
+.venv/
+*.egg-info/
+*.egg
+
+# VSCode / PyCharm
+.vscode/
+.idea/
+
+# Django stuff
+*.log
+db.sqlite3
+*.sqlite3
+media/
+staticfiles/
+local_settings.py
+
+# Migrations (optional: можно закоммитить вручную)
+**/migrations/*.pyc
+**/migrations/__pycache__/
+# Оставить пустой __init__.py, остальные файлы игнорировать:
+**/migrations/[0-9][0-9][0-9][0-9]*.py
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Tests cache
+htmlcov/
+.coverage
+.tox/
+.pytest_cache/
+.cache/
+nosetests.xml
+coverage.xml
+*.cover
+
+# Environments & secrets
+.env
+.env.*

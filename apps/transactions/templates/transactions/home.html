@@ -1,0 +1,23 @@
+{% extends "transactions/base.html" %}
+
+{% block title %}Добро пожаловать{% endblock %}
+
+{% block content %}
+    <h1 class="mb-4">Добро пожаловать в систему учёта ДДС</h1>
+
+    <p>Вы можете:</p>
+    <ul class="list-unstyled">
+        <li class="mb-2">
+            <a href="{% url 'transactions:transaction-list' %}" class="btn btn-outline-primary">Посмотреть список транзакций</a>
+        </li>
+        <li class="mb-2">
+            <a href="{% url 'transactions:transaction-create' %}" class="btn btn-outline-success">Создать транзакцию</a>
+        </li>
+        <li class="mb-2">
+            <a href="/admin/" class="btn btn-outline-secondary">Перейти в админ-панель</a>
+        </li>
+        <li class="mb-2">
+            <a href="/api/" class="btn btn-outline-dark">Перейти к API</a>
+        </li>
+    </ul>
+{% endblock %}
